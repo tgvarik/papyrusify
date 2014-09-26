@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Papyrusify",
+  "description": "This extension changes all text on the page above a size threshold to Papyrus.",
+  "version": "1.0",
+
+  "permissions": [
+    "https://secure.flickr.com/"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
