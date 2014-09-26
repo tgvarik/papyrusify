@@ -5,11 +5,16 @@
   "description": "This extension changes all text on the page above a size threshold to Papyrus.",
   "version": "1.0",
 
-  "permissions": [
-    "https://secure.flickr.com/"
-  ],
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
-  }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js", "jquery-2.1.1.min.js"],
+      "css": ["content.css"]
+    }
+  ]
 }
